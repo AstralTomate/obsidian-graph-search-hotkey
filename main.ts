@@ -14,11 +14,13 @@ export default class EasyGraphSearch extends Plugin {
 				const graphView = this.app.workspace.getLeaf().getViewState().type;	
 								
 				if (graphView == "graph") {	
+					// make sure that the graph controls is visable
 					this.app.workspace.activeLeaf.view.dataEngine.controlsEl.getElementsByClassName("clickable-icon graph-controls-button mod-open")[0].click()
+					// make sure that the filter options are not collapsed
 					this.app.workspace.activeLeaf.view.dataEngine.filterOptions.setCollapsed(false)
+					// select the input field
 					this.app.workspace.activeLeaf.view.dataEngine.filterOptions.search.inputEl.select(true)
-					// Not elegant, but who cares ...
-					
+					// Put the cursor in the end of the input field
 					this.app.workspace.activeLeaf.view.dataEngine.filterOptions.search.inputEl.setSelectionRange(this.app.workspace.activeLeaf.view.dataEngine.filterOptions.search.inputEl.selectionEnd,this.app.workspace.activeLeaf.view.dataEngine.filterOptions.search.inputEl.selectionEnd)
 				}
 			}
