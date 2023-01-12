@@ -1,10 +1,10 @@
 {
-	"id": "obsidian-easy-graph-search",
-	"name": "Easy Graph Search",
+	"id": "obsidian-graph-search-hotkey",
+	"name": "Graph Search Hotkey",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "This is a simple plugin so you can set a hotkey to switch to the search bar in the Graph view. It is Alt+f as a default.",
 	"author": "Johannes Geisler",
-	"authorUrl": "https://github.com/AstralTomate/obsidian-easy-graph-search",
+	"authorUrl": "https://github.com/AstralTomate/obsidian-graph-search-hotkey",
 	"isDesktopOnly": false
 }
